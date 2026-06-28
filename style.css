@@ -1,78 +1,285 @@
+/* ===== NEMESIS ESPORTS V2 ===== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
 }
 
 body{
-background:#0b0b0b;
-color:white;
+    background:#050505;
+    color:#fff;
 }
+
+/* ===== NAVBAR ===== */
 
 header{
-text-align:center;
-padding:50px 20px;
-background:linear-gradient(180deg,#111,#000);
-border-bottom:2px solid gold;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding:18px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:rgba(0,0,0,.75);
+    backdrop-filter:blur(12px);
+    border-bottom:1px solid rgba(255,215,0,.2);
+    z-index:999;
 }
 
-header h1{
-font-size:40px;
-color:#FFD700;
+.logo{
+    font-size:28px;
+    font-weight:800;
+    color:#FFD700;
+    letter-spacing:2px;
 }
 
-header p{
-margin-top:10px;
-font-size:18px;
-color:#ddd;
+nav{
+    display:flex;
+    gap:25px;
 }
 
-.register{
-width:90%;
-max-width:450px;
-margin:40px auto;
-padding:25px;
-background:#151515;
-border:2px solid #FFD700;
-border-radius:20px;
-box-shadow:0 0 20px rgba(255,215,0,.25);
+nav a{
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+    font-weight:500;
 }
 
-.register h2{
-text-align:center;
-margin-bottom:20px;
-color:#FFD700;
+nav a:hover{
+    color:#FFD700;
 }
 
-input{
-width:100%;
-padding:14px;
-margin:10px 0;
-border:none;
-border-radius:10px;
-background:#222;
-color:white;
+/* ===== HERO ===== */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:120px 20px 80px;
+    background:
+    radial-gradient(circle at top,#3a2b00 0%,#050505 60%);
 }
 
-input::placeholder{
-color:#bbb;
+.overlay{
+    max-width:850px;
+}
+
+.ne-logo{
+    width:140px;
+    height:140px;
+    margin:auto;
+    border-radius:50%;
+    border:3px solid #FFD700;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:65px;
+    font-weight:800;
+    color:#FFD700;
+
+    box-shadow:
+    0 0 15px #FFD700,
+    0 0 40px #FFD700,
+    0 0 80px rgba(255,215,0,.6);
+
+    animation:glow 2s infinite alternate;
+}
+
+@keyframes glow{
+
+from{
+
+box-shadow:
+0 0 10px #FFD700,
+0 0 30px #FFD700;
+
+}
+
+to{
+
+box-shadow:
+0 0 25px #FFD700,
+0 0 60px #FFD700,
+0 0 100px rgba(255,215,0,.8);
+
+}
+
+}/* ===== HERO TEXT ===== */
+
+.hero h1{
+    font-size:68px;
+    color:#FFD700;
+    font-weight:800;
+    margin-top:35px;
+    text-transform:uppercase;
+    letter-spacing:2px;
+}
+
+.hero p{
+    margin-top:20px;
+    font-size:22px;
+    color:#ddd;
+    margin-bottom:40px;
+}
+
+.btn{
+    display:inline-block;
+    padding:16px 42px;
+    background:#FFD700;
+    color:#000;
+    font-weight:700;
+    text-decoration:none;
+    border-radius:12px;
+    transition:.35s;
+    box-shadow:0 0 25px rgba(255,215,0,.4);
+}
+
+.btn:hover{
+    transform:translateY(-5px);
+    background:#fff;
+    box-shadow:0 0 35px #FFD700;
+}
+
+/* ===== SECTION ===== */
+
+section{
+    padding:90px 8%;
+}
+
+h2{
+    color:#FFD700;
+    text-align:center;
+    margin-bottom:35px;
+    font-size:38px;
+}
+
+/* ===== CARDS ===== */
+
+.card,
+.prize-card,
+.feature{
+    background:#111;
+    border:1px solid rgba(255,215,0,.25);
+    border-radius:18px;
+    padding:25px;
+    transition:.3s;
+}
+
+.card:hover,
+.prize-card:hover,
+.feature:hover{
+    transform:translateY(-8px);
+    border-color:#FFD700;
+    box-shadow:0 0 25px rgba(255,215,0,.25);
+}/* ===== FEATURES ===== */
+
+.feature-box{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:25px;
+}
+
+.feature h3{
+    color:#FFD700;
+    margin-bottom:10px;
+}
+
+.feature p{
+    color:#ccc;
+    line-height:1.7;
+}
+
+/* ===== FORM ===== */
+
+form{
+    background:#111;
+    padding:30px;
+    border-radius:20px;
+    border:1px solid rgba(255,215,0,.25);
+}
+
+input,
+select,
+textarea{
+    width:100%;
+    padding:15px;
+    margin:12px 0;
+    background:#1a1a1a;
+    border:1px solid #333;
+    color:#fff;
+    border-radius:10px;
+    outline:none;
+}
+
+input:focus,
+select:focus,
+textarea:focus{
+    border-color:#FFD700;
 }
 
 button{
-width:100%;
-padding:15px;
-background:#FFD700;
-color:black;
-font-weight:bold;
-font-size:18px;
-border:none;
-border-radius:10px;
-cursor:pointer;
-transition:.3s;
+    width:100%;
+    padding:16px;
+    background:#FFD700;
+    color:#000;
+    border:none;
+    border-radius:10px;
+    font-weight:700;
+    cursor:pointer;
+    transition:.3s;
 }
 
 button:hover{
-background:#ffcc00;
-transform:scale(1.03);
+    background:#fff;
+}
+
+/* ===== FOOTER ===== */
+
+footer{
+    padding:35px;
+    text-align:center;
+    background:#0b0b0b;
+    border-top:1px solid rgba(255,215,0,.2);
+    color:#aaa;
+}
+
+/* ===== MOBILE ===== */
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:40px;
+}
+
+.hero p{
+    font-size:18px;
+}
+
+nav{
+    display:none;
+}
+
+.logo{
+    font-size:22px;
+}
+
+.ne-logo{
+    width:100px;
+    height:100px;
+    font-size:45px;
+}
+
 }
