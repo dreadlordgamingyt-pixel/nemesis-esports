@@ -1,3 +1,7 @@
-document.addEventListener("DOMContentLoaded", () => {
-    console.log("NEMESIS ESPORTS Website Loaded");
+document.querySelector("form").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    alert("Registration Submitted Successfully!");
+
+    this.reset();
 });
