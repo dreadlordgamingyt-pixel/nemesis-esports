@@ -298,3 +298,30 @@ border-bottom:1px solid #333;
 }
 
 }
+/* ===== PRIZE POOL ===== */
+
+.prize-card{
+    background:#111;
+    border:2px solid #FFD700;
+    border-radius:20px;
+    padding:30px;
+    text-align:center;
+    transition:.3s;
+    box-shadow:0 0 20px rgba(255,215,0,.3);
+}
+
+.prize-card h3{
+    color:#FFD700;
+    margin-bottom:15px;
+    font-size:24px;
+}
+
+.prize-card h1{
+    color:#fff;
+    font-size:46px;
+}
+
+.prize-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 35px rgba(255,215,0,.6);
+    }
