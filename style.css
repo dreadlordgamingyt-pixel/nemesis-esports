@@ -283,3 +283,24 @@ nav{
 }
 
 }
+.countdown{
+    margin-top:35px;
+    text-align:center;
+}
+
+.countdown h3{
+    color:#FFD700;
+    margin-bottom:12px;
+}
+
+#timer{
+    font-size:28px;
+    font-weight:700;
+    color:#fff;
+    background:#111;
+    padding:15px 25px;
+    border-radius:12px;
+    border:2px solid #FFD700;
+    display:inline-block;
+    box-shadow:0 0 20px rgba(255,215,0,.4);
+}
