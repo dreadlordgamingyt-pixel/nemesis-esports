@@ -1,20 +1,3 @@
-document.addEventListener("DOMContentLoaded", () => {
-
-const form = document.querySelector("form");
-
-form.addEventListener("submit", function(e){
-
-e.preventDefault();
-
-const teamName = form.querySelector('input[placeholder="Team Name"]').value;
-
-alert("🎉 Registration Successful!\n\nWelcome " + teamName + " to NEMESIS ESPORTS.");
-
-form.reset();
-
-});
-
-});
 const targetDate = new Date("July 5, 2026 20:00:00").getTime();
 
 setInterval(() => {
@@ -28,8 +11,6 @@ const minutes = Math.floor((distance % (1000*60*60)) / (1000*60));
 const seconds = Math.floor((distance % (1000*60)) / 1000);
 
 document.getElementById("timer").innerHTML =
-`${days}d : ${hours}h : ${minutes}m : ${seconds}s`;
+`${days}D ${hours}H ${minutes}M ${seconds}S`;
 
 },1000);
-let slots = 0;
-document.getElementById("slots").innerText = slots + " / 12";
