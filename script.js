@@ -31,3 +31,5 @@ document.getElementById("timer").innerHTML =
 `${days}d : ${hours}h : ${minutes}m : ${seconds}s`;
 
 },1000);
+let slots = 0;
+document.getElementById("slots").innerText = slots + " / 12";
