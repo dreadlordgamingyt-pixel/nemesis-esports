@@ -204,3 +204,28 @@ nav{
     color:#FFD700;
     box-shadow:0 0 15px rgba(255,215,0,.3);
 }
+/* ===== WhatsApp Floating Button ===== */
+
+.whatsapp{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    width:60px;
+    height:60px;
+    background:#25D366;
+    color:#fff;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:30px;
+    text-decoration:none;
+    box-shadow:0 0 20px rgba(37,211,102,.5);
+    transition:.3s;
+    z-index:999;
+}
+
+.whatsapp:hover{
+    transform:scale(1.1);
+    box-shadow:0 0 30px rgba(37,211,102,.8);
+}
