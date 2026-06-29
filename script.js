@@ -59,3 +59,17 @@ card.style.transition=".6s";
 observer.observe(card);
 
 });
+const form = document.querySelector("form");
+const success = document.getElementById("success");
+
+form.addEventListener("submit", function(e){
+    e.preventDefault();
+
+    success.style.display = "block";
+
+    form.reset();
+
+    setTimeout(()=>{
+        success.style.display = "none";
+    },3000);
+});
