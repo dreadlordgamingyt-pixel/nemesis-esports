@@ -1,6 +1,4 @@
-/* ===== NEMESIS ESPORTS V2 ===== */
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap');
 
 *{
     margin:0;
@@ -18,8 +16,6 @@ body{
     color:#fff;
 }
 
-/* ===== NAVBAR ===== */
-
 header{
     position:fixed;
     top:0;
@@ -29,17 +25,15 @@ header{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    background:rgba(0,0,0,.75);
-    backdrop-filter:blur(12px);
-    border-bottom:1px solid rgba(255,215,0,.2);
-    z-index:999;
+    background:#111;
+    border-bottom:2px solid #FFD700;
+    z-index:1000;
 }
 
 .logo{
+    color:#FFD700;
     font-size:28px;
     font-weight:800;
-    color:#FFD700;
-    letter-spacing:2px;
 }
 
 nav{
@@ -48,17 +42,14 @@ nav{
 }
 
 nav a{
-    color:white;
+    color:#fff;
     text-decoration:none;
     transition:.3s;
-    font-weight:500;
 }
 
 nav a:hover{
     color:#FFD700;
 }
-
-/* ===== HERO ===== */
 
 .hero{
     min-height:100vh;
@@ -66,130 +57,68 @@ nav a:hover{
     justify-content:center;
     align-items:center;
     text-align:center;
-    padding:120px 20px 80px;
-    background:
-    radial-gradient(circle at top,#3a2b00 0%,#050505 60%);
-}
-
-.overlay{
-    max-width:850px;
+    padding:120px 20px;
+    background:radial-gradient(circle,#3b2d00,#050505);
 }
 
 .ne-logo{
     width:140px;
     height:140px;
-    margin:auto;
+    margin:0 auto 30px;
     border-radius:50%;
     border:3px solid #FFD700;
-
     display:flex;
     justify-content:center;
     align-items:center;
-
-    font-size:65px;
+    font-size:60px;
     font-weight:800;
     color:#FFD700;
-
-    box-shadow:
-    0 0 15px #FFD700,
-    0 0 40px #FFD700,
-    0 0 80px rgba(255,215,0,.6);
-
-    animation:glow 2s infinite alternate;
+    box-shadow:0 0 20px #FFD700;
 }
-
-@keyframes glow{
-
-from{
-
-box-shadow:
-0 0 10px #FFD700,
-0 0 30px #FFD700;
-
-}
-
-to{
-
-box-shadow:
-0 0 25px #FFD700,
-0 0 60px #FFD700,
-0 0 100px rgba(255,215,0,.8);
-
-}
-
-}/* ===== HERO TEXT ===== */
 
 .hero h1{
-    font-size:68px;
+    font-size:60px;
     color:#FFD700;
-    font-weight:800;
-    margin-top:35px;
-    text-transform:uppercase;
-    letter-spacing:2px;
 }
 
 .hero p{
-    margin-top:20px;
+    margin:20px 0 40px;
     font-size:22px;
-    color:#ddd;
-    margin-bottom:40px;
 }
 
 .btn{
     display:inline-block;
-    padding:16px 42px;
+    padding:15px 40px;
     background:#FFD700;
     color:#000;
-    font-weight:700;
     text-decoration:none;
-    border-radius:12px;
-    transition:.35s;
-    box-shadow:0 0 25px rgba(255,215,0,.4);
+    border-radius:10px;
+    font-weight:700;
 }
-
-.btn:hover{
-    transform:translateY(-5px);
-    background:#fff;
-    box-shadow:0 0 35px #FFD700;
-}
-
-/* ===== SECTION ===== */
 
 section{
-    padding:90px 8%;
+    padding:80px 8%;
 }
 
 h2{
-    color:#FFD700;
     text-align:center;
-    margin-bottom:35px;
-    font-size:38px;
+    color:#FFD700;
+    margin-bottom:30px;
 }
-
-/* ===== CARDS ===== */
 
 .card,
-.prize-card,
-.feature{
+.feature,
+form{
     background:#111;
-    border:1px solid rgba(255,215,0,.25);
-    border-radius:18px;
+    border:1px solid #FFD700;
+    border-radius:15px;
     padding:25px;
-    transition:.3s;
 }
-
-.card:hover,
-.prize-card:hover,
-.feature:hover{
-    transform:translateY(-8px);
-    border-color:#FFD700;
-    box-shadow:0 0 25px rgba(255,215,0,.25);
-}/* ===== FEATURES ===== */
 
 .feature-box{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-    gap:25px;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
 }
 
 .feature h3{
@@ -197,83 +126,55 @@ h2{
     margin-bottom:10px;
 }
 
-.feature p{
-    color:#ccc;
-    line-height:1.7;
-}
-
-/* ===== FORM ===== */
-
-form{
-    background:#111;
-    padding:30px;
-    border-radius:20px;
-    border:1px solid rgba(255,215,0,.25);
-}
-
-input,
-select,
-textarea{
+input{
     width:100%;
     padding:15px;
     margin:12px 0;
-    background:#1a1a1a;
-    border:1px solid #333;
+    background:#1b1b1b;
     color:#fff;
-    border-radius:10px;
-    outline:none;
-}
-
-input:focus,
-select:focus,
-textarea:focus{
-    border-color:#FFD700;
+    border:1px solid #333;
+    border-radius:8px;
 }
 
 button{
     width:100%;
-    padding:16px;
+    padding:15px;
     background:#FFD700;
     color:#000;
     border:none;
-    border-radius:10px;
+    border-radius:8px;
+    font-size:18px;
     font-weight:700;
     cursor:pointer;
-    transition:.3s;
 }
-
-button:hover{
-    background:#fff;
-}
-
-/* ===== FOOTER ===== */
 
 footer{
-    padding:35px;
+    padding:30px;
     text-align:center;
-    background:#0b0b0b;
-    border-top:1px solid rgba(255,215,0,.2);
+    background:#111;
     color:#aaa;
+    border-top:2px solid #FFD700;
 }
-
-/* ===== MOBILE ===== */
 
 @media(max-width:768px){
 
+header{
+    flex-direction:column;
+    gap:10px;
+}
+
+nav{
+    gap:15px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
 .hero h1{
-    font-size:40px;
+    font-size:38px;
 }
 
 .hero p{
     font-size:18px;
-}
-
-nav{
-    display:none;
-}
-
-.logo{
-    font-size:22px;
 }
 
 .ne-logo{
@@ -281,72 +182,4 @@ nav{
     height:100px;
     font-size:45px;
 }
-
-}
-.countdown{
-    margin-top:35px;
-    text-align:center;
-}
-
-.countdown h3{
-    color:#FFD700;
-    margin-bottom:12px;
-}
-
-#timer{
-    font-size:28px;
-    font-weight:700;
-    color:#fff;
-    background:#111;
-    padding:15px 25px;
-    border-radius:12px;
-    border:2px solid #FFD700;
-    display:inline-block;
-    box-shadow:0 0 20px rgba(255,215,0,.4);
-}.slots-card{
-    max-width:350px;
-    margin:40px auto;
-    background:#111;
-    border:2px solid #FFD700;
-    border-radius:18px;
-    padding:25px;
-    text-align:center;
-    box-shadow:0 0 20px rgba(255,215,0,.3);
-}
-
-.slots-card h3{
-    color:#FFD700;
-    margin-bottom:10px;
-}
-
-.slots-card h1{
-    font-size:50px;
-    color:#fff;
-}
-.slots-card{
-    width:320px;
-    margin:50px auto;
-    padding:30px;
-    background:#111;
-    border:2px solid #FFD700;
-    border-radius:20px;
-    text-align:center;
-    box-shadow:0 0 20px rgba(255,215,0,.3);
-}
-
-.slots-card h3{
-    color:#FFD700;
-    margin-bottom:10px;
-    font-size:24px;
-}
-
-.slots-card h1{
-    color:#fff;
-    font-size:48px;
-    margin:15px 0;
-}
-
-.slots-card p{
-    color:#bbb;
-    font-size:18px;
 }
