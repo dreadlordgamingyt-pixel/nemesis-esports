@@ -513,3 +513,10 @@ border-radius:10px;
 font-weight:700;
 box-shadow:0 0 20px rgba(22,163,74,.4);
 }
+.logo-main{
+    width:180px;
+    height:auto;
+    display:block;
+    margin:0 auto 20px;
+    filter:drop-shadow(0 0 15px #FFD700);
+}
