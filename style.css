@@ -229,3 +229,36 @@ nav{
     transform:scale(1.1);
     box-shadow:0 0 30px rgba(37,211,102,.8);
 }
+/* ===== LIVE SLOTS ===== */
+
+.slots-card{
+    max-width:380px;
+    margin:40px auto;
+    background:#111;
+    border:2px solid #FFD700;
+    border-radius:20px;
+    padding:30px;
+    text-align:center;
+    box-shadow:0 0 25px rgba(255,215,0,.3);
+    transition:.3s;
+}
+
+.slots-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 0 40px rgba(255,215,0,.6);
+}
+
+.slots-card h3{
+    color:#FFD700;
+    margin-bottom:15px;
+}
+
+.slots-card h1{
+    font-size:55px;
+    color:#fff;
+}
+
+.slots-card p{
+    color:#bbb;
+    margin-top:15px;
+    }
