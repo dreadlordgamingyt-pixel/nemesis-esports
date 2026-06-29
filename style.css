@@ -303,4 +303,23 @@ nav{
     border:2px solid #FFD700;
     display:inline-block;
     box-shadow:0 0 20px rgba(255,215,0,.4);
+}.slots-card{
+    max-width:350px;
+    margin:40px auto;
+    background:#111;
+    border:2px solid #FFD700;
+    border-radius:18px;
+    padding:25px;
+    text-align:center;
+    box-shadow:0 0 20px rgba(255,215,0,.3);
+}
+
+.slots-card h3{
+    color:#FFD700;
+    margin-bottom:10px;
+}
+
+.slots-card h1{
+    font-size:50px;
+    color:#fff;
 }
