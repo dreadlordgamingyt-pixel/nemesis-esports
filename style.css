@@ -496,3 +496,14 @@ transform:translateY(-60px);
     transform:translateY(-10px);
     box-shadow:0 0 30px rgba(255,215,0,.5);
 }
+.success-message{
+display:none;
+margin-top:20px;
+padding:15px;
+background:#16a34a;
+color:#fff;
+text-align:center;
+border-radius:10px;
+font-weight:700;
+box-shadow:0 0 20px rgba(22,163,74,.4);
+}
