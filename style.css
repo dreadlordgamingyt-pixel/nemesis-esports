@@ -399,3 +399,36 @@ transform:translateY(-60px);
 .whatsapp:hover{
     transform:scale(1.1);
 }
+.status-bar{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+    padding:40px 8%;
+}
+
+.status-card{
+    background:#111;
+    border:2px solid #FFD700;
+    border-radius:18px;
+    padding:25px;
+    text-align:center;
+    transition:.3s;
+    box-shadow:0 0 20px rgba(255,215,0,.3);
+}
+
+.status-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 0 35px rgba(255,215,0,.6);
+}
+
+.status-card h3{
+    color:#FFD700;
+    margin-bottom:12px;
+    font-size:22px;
+}
+
+.status-card p{
+    color:#fff;
+    font-size:18px;
+    font-weight:600;
+}
