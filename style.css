@@ -432,3 +432,36 @@ transform:translateY(-60px);
     font-size:18px;
     font-weight:600;
 }
+/* ===== HERO ANIMATION ===== */
+
+.hero{
+    position:relative;
+    overflow:hidden;
+}
+
+.hero::before{
+    content:"";
+    position:absolute;
+    width:200%;
+    height:200%;
+    top:-50%;
+    left:-50%;
+    background:
+    radial-gradient(circle,rgba(255,215,0,.08) 2px,transparent 2px);
+    background-size:70px 70px;
+    animation:moveBg 18s linear infinite;
+}
+
+.hero .overlay{
+    position:relative;
+    z-index:2;
+}
+
+@keyframes moveBg{
+    from{
+        transform:translate(0,0);
+    }
+    to{
+        transform:translate(80px,80px);
+    }
+}
