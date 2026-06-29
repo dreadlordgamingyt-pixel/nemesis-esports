@@ -28,3 +28,8 @@ const maxSlots = 12;
 
 document.getElementById("slots-count").innerHTML =
 slots + " / " + maxSlots;
+function toggleMenu(){
+
+document.querySelector("nav").classList.toggle("active");
+
+}
