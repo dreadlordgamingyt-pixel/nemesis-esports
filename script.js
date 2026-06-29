@@ -14,3 +14,10 @@ document.getElementById("timer").innerHTML =
 `${days}D ${hours}H ${minutes}M ${seconds}S`;
 
 },1000);
+// LIVE SLOTS
+
+let slots = 0;
+const maxSlots = 12;
+
+document.getElementById("slots-count").innerHTML =
+`${slots} / ${maxSlots}`;
